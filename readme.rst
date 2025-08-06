@@ -22,11 +22,12 @@ Configure /application/config/database.php com suas credenciais.
 
 🔐 Endpoints
 Método	Rota	Descrição
-GET	    /users	Listar todos os usuários
-GET	    /users/{id}	Detalhes de um usuário
-POST	/users	Criar novo usuário
-PUT	    /users/{id}	Atualizar usuário existente
-DELETE	/users/{id}	Deletar usuário
+POST	  /api/v1/login	Gerar token
+GET	    /api/v1/users	Listar todos os usuários
+GET	    /api/v1/users/{id}	Detalhes de um usuário
+POST	  /api/v1/users	Criar novo usuário
+PUT	    /api/v1/users/{id}	Atualizar usuário existente
+DELETE	/api/v1/users/{id}	Deletar usuário
 
 Exemplo POST
 json
