@@ -16,7 +16,6 @@ Esta API permite criar, listar, visualizar, atualizar e deletar usuários, retor
    - git clone https://github.com/ras22lok/api_users.git
 
 Importe o banco de dados MySQL com o arquivo schema.sql.
-    - 
 
 Configure /application/config/database.php com suas credenciais.
 
@@ -29,19 +28,9 @@ POST	  /api/v1/users	Criar novo usuário
 PUT	    /api/v1/users/{id}	Atualizar usuário existente
 DELETE	/api/v1/users/{id}	Deletar usuário
 
-Exemplo POST
-json
-Copiar
-Editar
-{
-  "name": "João",
-  "email": "joao@email.com",
-  "password": "senha123"
-}
-
 🔒 Segurança
-Senhas são criptografadas com password_hash.
+Senhas são criptografadas com md5.
 
 Validação de entrada no controller.
 
-Incluir JWT para autenticação.
+Incluir JWT para autenticação. Parâmetro authorization
